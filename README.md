@@ -1,4 +1,4 @@
-# Solidity Stoage Builder
+# Solidity Storage Builder
 
 For now just clone the repository, run `npm i` and import the file
 
