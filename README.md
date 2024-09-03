@@ -1,6 +1,6 @@
 # Solidity Storage Builder
 
-To add to an node project, run `npm i solidity-storage-builder`
+To add to an existing node project, run `npm i solidity-storage-builder`
 
 # Usage
 ```javascript
