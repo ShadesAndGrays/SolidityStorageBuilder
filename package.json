@@ -13,8 +13,7 @@
     "description": "Solidity Storage Builder",
     "dependencies": {
         "bn.js": "^5.1.2",
-        "web3-utils": "^4.3.1",
-        "xregexp": "^5.1.1"
+        "web3-utils": "^4.3.1"
     },
     "devDependencies": {},
     "repository": {
