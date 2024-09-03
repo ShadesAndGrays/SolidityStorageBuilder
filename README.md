@@ -1,11 +1,10 @@
 # Solidity Storage Builder
 
-For now just clone the repository, run `npm i` and import the file
+To add to an node project, run `npm i solidity-storage-builder`
 
 # Usage
 ```javascript
-import StorageBuilder from "./StorageBuilder.js";
-
+import StorageBuilder from "solidity-storage-builder";
 ```
 
 ### Example 1
