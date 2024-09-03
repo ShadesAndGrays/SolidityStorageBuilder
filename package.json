@@ -1,20 +1,28 @@
 {
-    "name": "solidity_storage_builder",
-    "version": "1.0.0",
-    "main": "index.js",
+    "name": "solidity-storage-builder",
+    "version": "0.1.0",
+    "main": "StorageBuilder.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "node StorageBuilder.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "type": "module",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
+    "keywords": ["solidity","ethereum","smart-contracts","evm","storage"],
+    "author": "ShadesAndGrays",
+    "license": "MIT",
+    "description": "Solidity Storage Builder",
     "dependencies": {
         "bn.js": "^5.1.2",
-        "keccak256": "^1.0.6",
         "web3-utils": "^4.3.1",
         "xregexp": "^5.1.1"
-    }
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ShadesAndGrays/SolidityStorageBuilder.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ShadesAndGrays/SolidityStorageBuilder/issues"
+    },
+    "homepage": "https://github.com/ShadesAndGrays/SolidityStorageBuilder#readme"
 }
