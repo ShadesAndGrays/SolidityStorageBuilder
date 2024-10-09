@@ -1,6 +1,6 @@
 {
     "name": "solidity-storage-builder",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "main": "StorageBuilder.js",
     "scripts": {
         "start": "node StorageBuilder.js",
