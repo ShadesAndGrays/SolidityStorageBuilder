@@ -5,6 +5,7 @@ export const VAR_TYPE = Object.freeze({
     UINT256:1,
     ADDRESS:2,
     STRING:3,
+    BOOL:4,
 
 });
 
@@ -99,7 +100,7 @@ export default class StorageBuilder{
                     _slotNo = sha3(padLeft(key,64) + padLeft(slotNo,64)).substring(2).toString(16);
                     break;
                 case VAR_TYPE.ADDRESS: 
-                    _slotNo = sha3(padLeft(key,64) + padLeft(slotNo,64)).substring(2).toString(16);
+                    _slotNo = sha3(padLeft(key.toLowerCase(), 64) + padLeft(slotNo,64)).substring(2).toString(16);
                     break;
                 case VAR_TYPE.STRING: 
                    _slotNo = sha3("0x"+this.stringToHex(key) + padLeft(slotNo,64)).substring(2).toString(16);
@@ -108,10 +109,13 @@ export default class StorageBuilder{
             // handle value section
             switch (valType){
                 case VAR_TYPE.UINT256: 
-                    _val = padLeft(val[key],64);
+                    _val = padLeft(val[key],64).substring(2);
                     break;
                 case VAR_TYPE.ADDRESS: 
-                    _val = padLeft(val[key],64);
+                    _val = padLeft(val[key],64).substring(2);
+                    break;
+                case VAR_TYPE.BOOL: 
+                    _val = padLeft(val[key],64).substring(2);
                     break;
                 case VAR_TYPE.STRING: 
                    _val = this.string32Slot(2989,val[key],false)[padLeft(2989,64).substring(2)];
